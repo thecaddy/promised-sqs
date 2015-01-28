@@ -1,6 +1,6 @@
 {
   "name": "promised-sqs",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A wrapper for AWS SQS to Promises",
   "main": "index.js",
   "scripts": {

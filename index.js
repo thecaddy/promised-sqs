@@ -20,6 +20,7 @@ module.exports = function(qUrl, awsConfig){
   for(var i = 0; i < calls.length; i++){
     retObj[calls[i]] = function(call){
       return function(params){
+        if(!params) params = {}
         if(qUrl) params.QueueUrl = qUrl
         return new Promise(function(resolve, reject){
           sqs[call](params, function(err, data){
