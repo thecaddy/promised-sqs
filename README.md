@@ -8,16 +8,30 @@ http://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/SQS.html
 
 #### Constructor
 
-To create a new SQS object we require the Que URL and the AWS config.
+
+To create a new SQS object we require the AWS config.
+
+```
+var sqs = require('promised-sqs')({
+  apiVersion: '',
+  accessKeyId: '',
+  secretAccessKey: '',
+  region: '',
+  sslEnabled: true
+})
+```
+
+An added nicety if you're usually only working with a single queue like me
+you can add the queue URL follow by the  AWS config.
 
 ```
 var sqs = require('promised-sqs')('http://queUrl.boom', {
-    apiVersion: '',
-    accessKeyId: '',
-    secretAccessKey: '',
-    region: '',
-    sslEnabled: true
-  })
+  apiVersion: '',
+  accessKeyId: '',
+  secretAccessKey: '',
+  region: '',
+  sslEnabled: true
+})
 ```
 
 #### Usage
