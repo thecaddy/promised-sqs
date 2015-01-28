@@ -1,6 +1,6 @@
 {
   "name": "promised-sqs",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "A wrapper for AWS SQS to Promises",
   "main": "index.js",
   "scripts": {
@@ -16,7 +16,7 @@
     "promise",
     "amazon"
   ],
-  "author": "Joel Trost <joel.trost@gmail.com> (https://github.com/stoodder/finchjs)",
+  "author": "Joel Trost <joel.trost@gmail.com>",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/thecaddy/promised-sqs/issues"
